@@ -21,16 +21,14 @@ Either way, please create one Git commit directly after you have set up the init
 You are tasked with creating a classic to-do list application. The user needs to be able to add, edit and delete tasks from their to-do list as well as see an overview of how many tasks they have completed.
 
 The product requirements are:
-[ ] A task has a description, creation date and a status of either outstanding or completed
-[ ] A user should be able to clearly see if a task is outstanding or completed
-[ ] A user should be able to see the date and time when they created the task
-[ ] A user can create a task with just a description, tasks are marked as outstanding when created
-[ ] An outstanding task can be marked as completed
-[ ] An outstanding task’s description can be edited
-[ ] A completed task can be marked as outstanding
-[ ] A completed task cannot be edited
-[ ] Both outstanding and completed tasks can be deleted
-[ ] There must be a summary at the bottom of the list showing how many tasks are
-outstanding and completed
-You are given this wireframe, but you are free to implement it however you want
+- [ ] A task has a description, creation date and a status of either outstanding or completed
+- [ ] A user should be able to clearly see if a task is outstanding or completed
+- [ ] A user should be able to see the date and time when they created the task
+- [ ] A user can create a task with just a description, tasks are marked as outstanding when created
+- [ ] An outstanding task can be marked as completed
+- [ ] An outstanding task’s description can be edited
+- [ ] A completed task can be marked as outstanding
+- [ ] A completed task cannot be edited
+- [ ] Both outstanding and completed tasks can be deleted
+- [ ] There must be a summary at the bottom of the list showing how many tasks are outstanding and completed
 
