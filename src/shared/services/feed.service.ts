@@ -12,14 +12,15 @@ export default class FeedService {
 
 	public getSomeTodos(): Todo[]{
 		return [
-			this.giveMeTodo("bootstrap app", 1),
-			this.giveMeTodo("create task component", 0),
-			this.giveMeTodo("create task liks", 0),
-			this.giveMeTodo("deploy", 0),
+			this.giveMeTodo(1, "bootstrap app", 1),
+			this.giveMeTodo(2, "create task component", 0),
+			this.giveMeTodo(3, "create task list", 1),
+			this.giveMeTodo(4, "deploy", 0),
 		];
 	}
 
 	private giveMeTodo(
+		id: number,
 		description:string,
 		status: number,
 		creation?: Date,
@@ -28,7 +29,7 @@ export default class FeedService {
 			creation = new Date();
 		}
 		return {
-			description, status,
+			id, description, status,
 			created_at: creation,
 		};
 	}

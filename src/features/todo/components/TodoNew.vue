@@ -2,16 +2,16 @@
 import { TodoService } from "@/features/todo/todo.service";
 
 export default {
+	emits: ["on-create"],
 	methods: {
 		addTodo() {
+			if(this.description == "") return;
 			const service = TodoService;
 			const createdTodo = service.addTodo(this.description);
-			console.info("c", createdTodo);
 			this.$emit("on-create", createdTodo);
 			this.description = "";
 		},
 	},
-	emits: ["on-create"],
 	data() {
 		return {
 			description: "",
@@ -36,7 +36,7 @@ export default {
 		</div>
 		<div class="t block">
 			<button
-				class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+				class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
 				@click="addTodo()"
 			>
 				Add
