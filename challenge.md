@@ -23,12 +23,12 @@ You are tasked with creating a classic to-do list application. The user needs to
 The product requirements are:
 - [X] A task has a description, creation date and a status of either outstanding or completed
 - [X] A user should be able to clearly see if a task is outstanding or completed
-- [ ] A user should be able to see the date and time when they created the task
+- [X] A user should be able to see the date and time when they created the task
 - [X] A user can create a task with just a description, tasks are marked as outstanding when created
-- [ ] An outstanding task can be marked as completed
-- [ ] An outstanding task’s description can be edited
-- [ ] A completed task can be marked as outstanding
-- [ ] A completed task cannot be edited
-- [ ] Both outstanding and completed tasks can be deleted
-- [ ] There must be a summary at the bottom of the list showing how many tasks are outstanding and completed
+- [X] An outstanding task can be marked as completed
+- [X] An outstanding task’s description can be edited
+- [X] A completed task can be marked as outstanding
+- [X] A completed task cannot be edited
+- [X] Both outstanding and completed tasks can be deleted
+- [X] There must be a summary at the bottom of the list showing how many tasks are outstanding and completed
 

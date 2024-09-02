@@ -4,6 +4,7 @@ import type { Todo } from "./todo.interface";
 
 class TodoServiceClass {
 	public list: Todo[] = [];
+	private lastId: number = 0;
 
 	constructor() {}
 
@@ -12,8 +13,10 @@ class TodoServiceClass {
 	}
 
 	public addTodo(desc: string) {
+		this.lastId ++;
 		const now = new Date();
 		const item: Todo = {
+			id: this.lastId,
 			description: desc,
 			status: 0, created_at: now,
 		}
@@ -21,8 +24,14 @@ class TodoServiceClass {
 		return item;
 	}
 
+	public deleteTodo(id:number) {
+		console.info("deleting ", id);
+		this.list = this.list.filter((t) => t.id != id);
+	}
+
 	public startList(l: Todo[]) {
 		this.list = l;
+		this.lastId = l.length;
 	}
 }
 
